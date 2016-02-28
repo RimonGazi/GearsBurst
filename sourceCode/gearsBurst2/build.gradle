@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.stgame.gears"
+        minSdkVersion 9
+        targetSdkVersion 19
+        multiDexEnabled true
+
+//        ndk {
+//            moduleName "cocos2dcpp_shared"
+//        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+}
+
+dependencies {
+    compile project(':libcocos2dx')
+    compile files('libs/FlurryAnalytics-6.0.0.jar')
+    compile files('libs/PluginIAP.jar')
+    compile files('libs/sdkbox.jar')
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile files('libs/PluginFacebook.jar')
+}

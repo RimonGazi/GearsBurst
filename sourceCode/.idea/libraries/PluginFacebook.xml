@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PluginFacebook">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gearsBurst2/libs/PluginFacebook.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

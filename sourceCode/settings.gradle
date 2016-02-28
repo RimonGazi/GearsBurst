@@ -1,0 +1,3 @@
+include ':facebook'
+include ':libcocos2dx'
+include ':gearsBurst2'

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sdkbox">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gearsBurst2/libs/sdkbox.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PluginIAP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gearsBurst2/libs/PluginIAP.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
